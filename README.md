@@ -112,5 +112,8 @@ The dataset used in this project is the Amazon Reviews dataset (All-Beauty categ
    - Compare the results with the baseline and confidence scoring enabled models.
 
 
-## Report
+## Final Report
 [CS 274 Final Report - Alan Chuang](./CS_274_Final_Report.pdf)
+
+## Final Presentation
+[CS 274 Final Presentation - Alan Chuang](./CS 274_Final_Presentation.pdf)
