@@ -1,9 +1,9 @@
 # CS274-Final-Project
-## Alan Chuang
-## CS 274: Web Intelligence
-## Prof. Teng Moh
-## San Jose State University
-## alan.chuang@sjsu.edu
+Alan Chuang
+CS 274: Web Intelligence
+Prof. Teng Moh
+San Jose State University
+alan.chuang@sjsu.edu
 # KR-BERT: Advancing E-Commerce Search with Entity Confidence
 
 This repository contains the implementation of the Knowledge Relevance BERT (KR-BERT) model for improving product-concept matching in e-commerce platforms. This project integrates knowledge graph triplet embeddings and a dynamic relevance scoring mechanism to enhance language representations.
