@@ -113,4 +113,4 @@ The dataset used in this project is the Amazon Reviews dataset (All-Beauty categ
 
 
 ## Report
-[Link to PDF](./CS_274_Final_Report.pdf)
+[CS 274 Final Report - Alan Chuang](./CS_274_Final_Report.pdf)
