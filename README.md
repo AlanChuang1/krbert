@@ -7,9 +7,13 @@ San Jose State University
 alan.chuang@sjsu.edu
 
 To train and evaluate the KR-BERT model without confidence scoring:
+```bash
 python main.py
+```
 
 To train and evaluate the KR-BERT model with confidence scoring:
-python main.py --use_confidence
 
+```bash
+python main.py --use_confidence
+```
 
