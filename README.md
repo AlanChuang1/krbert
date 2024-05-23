@@ -96,10 +96,16 @@ The dataset used in this project is the Amazon Reviews dataset (All-Beauty categ
 ### Evaluating the Model
 
 1. **Run evaluation scripts:**
-
-    ```sh
-    python evaluate.py --model_path path/to/saved_model
+   To train and evaluate the KR-BERT model without confidence scoring:
+   ```sh
+    python main.py
     ```
 
-2. **Comparison:**
+    To train and evaluate the KR-BERT model with confidence scoring:
+   ```sh
+    python main.py --use_confidence
+    ```
+    
+
+3. **Comparison:**
    - Compare the results with the baseline and confidence scoring enabled models.
