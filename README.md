@@ -56,10 +56,11 @@ E-commerce platforms often struggle with accurately linking products to relevant
 
 1. **Download the dataset:**
    - Download the Amazon Reviews dataset (All-Beauty category) from [Hugging Face](https://huggingface.co/datasets/McAuley-Lab/Amazon-Reviews-2023).
-    ![data](./diagrams/data.PNG)
+     ![data](./diagrams/data.PNG)
 
 2. **Extract the dataset:**
    - Place the `All_Beauty.jsonl` and `meta_All_Beauty.jsonl` files in a directory named `dataset` within the project root.
+     ![file structure](./diagrams/files.png)
 
 3. **Configuring Google Colab (optional):**
    - If using Google Colab, upload the dataset to Google Drive and use the provided Colab notebook to mount the drive and set paths accordingly.
