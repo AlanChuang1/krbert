@@ -6,7 +6,9 @@ San Jose State University \
 alan.chuang@sjsu.edu \
 # KR-BERT: Advancing E-Commerce Search with Entity Confidence
 
-This repository contains the implementation of the Knowledge Relevance BERT (KR-BERT) model for improving product-concept matching in e-commerce platforms. This project integrates knowledge graph triplet embeddings and a dynamic relevance scoring mechanism to enhance language representations.
+This repository contains the implementation of the Knowledge Relevance BERT (KR-BERT) model for improving product-concept matching in e-commerce platforms, along with the proposed change to the existing KR-BERT architecture to include entity confidence scoring. 
+
+![Confidence KR-BERT](./diagrams/confidence.png)
 
 ## Table of Contents
 
