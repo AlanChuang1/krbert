@@ -117,3 +117,19 @@ The dataset used in this project is the Amazon Reviews dataset (All-Beauty categ
 
 ## Final Presentation
 [CS 274 Final Presentation - Alan Chuang](./CS_274_Final_Presentation.pdf)
+
+## References
+
+[1] K. Samel et al., “Knowledge Relevance BERT: Integrating Noisy Knowledge into Language Representations,” AAAI Conference on Artificial Intelligence, 2023. \
+[2] “McAuley-Lab/Amazon-Reviews-2023 · Datasets at Hugging Face,” Hugging Face, Mar. 31, 2024. \
+[3] S. Khalid, “BERT Explained: A Complete Guide with Theory and Tutorial,” Medium, Apr. 10, 2020. \
+[4] arrrrrmin, “arrrrrmin/albert-guide,” GitHub, Dec. 15, 2023. \
+[5] G. Singh, “Fine-Tune ERNIE 2.0 for Text Classification,” Medium, Aug. 2019. \
+[6] “How to Code BERT Using PyTorch - Tutorial With Examples,” neptune.ai, May 20, 2021. \
+[7] CheeKean, “Mastering BERT Model: A Complete Guide to Build it from Scratch,” Data And Beyond, Sep. 05, 2023. \
+[8] A. Dadoun, “Knowledge Graph Embeddings 101,” Medium, May 23, 2023. \
+[9] X. Ge, Y.-C. Wang, B. Wang, and C.-C. J. Kuo, “Knowledge Graph Embedding: An Overview,” arXiv.org, Sep. 21, 2023. \
+[10] N. Kolitsas, O.-E. Ganea, and T. Hofmann, “End-to-end neural entity linking,” arXiv preprint arXiv:1808.07699, 2018. \
+[11] W. Liu, P. Zhou, Z. Zhao, Z. Wang, Q. Ju, H. Deng, and P. Wang, “K-bert: Enabling language representation with knowledge graph,” in Proceedings of the AAAI Conference on Artificial Intelligence, vol. 34, no. 03, 2020, pp. 2901–2908. \
+[12] Q. Gu, Y. Zhang, J. Cao, G. Xu, and A. Cuzzocrea, “A confidence-based entity resolution approach with incomplete information,” 2014 International Conference on Data Science and Advanced Analytics (DSAA), 2014, pp. 97-103. doi:10.1109/DSAA.2014.7058058.
+
