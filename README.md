@@ -16,9 +16,10 @@ This repository contains the implementation of the Knowledge Relevance BERT (KR-
 2. [Setup and Installation](#setup-and-installation)
 3. [Dataset](#dataset)
 4. [Running the Project](#running-the-project)
-5. [Results](#results)
-6. [Contributing](#contributing)
-7. [License](#license)
+5. [Report](#report)
+6. [Presentation](presentation)
+7. [References](references)
+8. [License](#license)
 
 ## Introduction
 
@@ -109,3 +110,7 @@ The dataset used in this project is the Amazon Reviews dataset (All-Beauty categ
 
 3. **Comparison:**
    - Compare the results with the baseline and confidence scoring enabled models.
+
+
+## Report
+[CS 274 Final Report - Alan Chuang](./CS_274_Final_Report.pdf)
