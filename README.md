@@ -28,10 +28,7 @@ E-commerce platforms often struggle with accurately linking products to relevant
 
 ### Prerequisites
 
-- Python 3.8 or higher
-- PyTorch
-- Hugging Face Transformers
-- Other dependencies listed in `requirements.txt`
+- Dpendencies listed in `requirements.txt`
 
 ### Installation
 
