@@ -27,22 +27,22 @@ def main(args):
     # Create triplets
     triplets = create_triplets(reviews_df, metadata_df)
 
-    print(triplets.size())
+    print(len(triplets))
 
     # Calculate confidence scores if required
     confidence_scores = None
     if args.use_confidence:
         confidence_scores = calculate_confidence_scores(triplets)
 
-    sample_size = 12000  
-    sampled_triplets = random.sample(triplets, sample_size)
+    # Sample triplets
+    sampled_triplets = random.sample(triplets, args.sample_size)
 
     # Tokenizer
     tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
 
     # Prepare dataset and dataloader with sampled triplets
     triplet_dataset = TripletDataset(sampled_triplets, tokenizer, confidence_scores, args.use_confidence)
-    triplet_dataloader = DataLoader(triplet_dataset, batch_size=32, shuffle=True)
+    triplet_dataloader = DataLoader(triplet_dataset, batch_size=args.batch_size, shuffle=True)
 
     # Initialize the model
     relation_vocab_size = len(triplet_dataset.relation_vocab) 
@@ -54,18 +54,17 @@ def main(args):
     model = model.to(device)
 
     optimizer = optim.AdamW(model.parameters(), lr=2e-5)  # Use PyTorch's AdamW
-    epochs = 4
-    total_steps = len(triplet_dataloader) * epochs
+    total_steps = len(triplet_dataloader) * args.epochs
     scheduler = get_linear_schedule_with_warmup(optimizer, num_warmup_steps=0, num_training_steps=total_steps)
     loss_fn = nn.BCEWithLogitsLoss().to(device)  
 
     # Training loop
-    for epoch in range(epochs):
+    for epoch in range(args.epochs):
         model.train()
         total_loss = 0
         all_labels = []
         all_preds = []
-        for step, batch in enumerate(tqdm(triplet_dataloader, desc=f"Epoch {epoch+1}/{epochs}")):
+        for step, batch in enumerate(t tqdm(triplet_dataloader, desc=f"Epoch {epoch+1}/{args.epochs}")):
             input_ids = batch['input_ids'].to(device)
             attention_mask = batch['attention_mask'].to(device)
             relation_ids = batch['relation'].to(device)  # Convert relation to ids
@@ -100,5 +99,8 @@ def main(args):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Train KR-BERT model with or without confidence scoring")
     parser.add_argument("--use_confidence", action="store_true", help="Use confidence scoring during training")
+    parser.add_argument("--epochs", type=int, default=4, help="Number of training epochs")
+    parser.add_argument("--batch_size", type=int, default=32, help="Batch size for training")
+    parser.add_argument("--sample_size", type=int, default=12000, help="Number of samples to use for training")
     args = parser.parse_args()
     main(args)
